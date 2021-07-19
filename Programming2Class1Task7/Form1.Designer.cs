@@ -59,6 +59,7 @@ namespace Programming2Class1Task7
             this.num1.TabIndex = 0;
             this.num1.Text = "1";
             this.num1.UseVisualStyleBackColor = true;
+            this.num1.Click += new System.EventHandler(this.num1_Click);
             // 
             // output
             // 
@@ -67,6 +68,7 @@ namespace Programming2Class1Task7
             this.output.Name = "output";
             this.output.Size = new System.Drawing.Size(218, 38);
             this.output.TabIndex = 1;
+            this.output.TextChanged += new System.EventHandler(this.output_TextChanged);
             // 
             // num2
             // 
@@ -77,6 +79,7 @@ namespace Programming2Class1Task7
             this.num2.TabIndex = 2;
             this.num2.Text = "2";
             this.num2.UseVisualStyleBackColor = true;
+            this.num2.Click += new System.EventHandler(this.num2_Click);
             // 
             // num0
             // 
@@ -88,6 +91,7 @@ namespace Programming2Class1Task7
             this.num0.Text = "0";
             this.num0.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.num0.UseVisualStyleBackColor = true;
+            this.num0.Click += new System.EventHandler(this.num0_Click);
             // 
             // num3
             // 
@@ -98,6 +102,7 @@ namespace Programming2Class1Task7
             this.num3.TabIndex = 4;
             this.num3.Text = "3";
             this.num3.UseVisualStyleBackColor = true;
+            this.num3.Click += new System.EventHandler(this.num3_Click);
             // 
             // num6
             // 
@@ -108,6 +113,7 @@ namespace Programming2Class1Task7
             this.num6.TabIndex = 7;
             this.num6.Text = "6";
             this.num6.UseVisualStyleBackColor = true;
+            this.num6.Click += new System.EventHandler(this.num6_Click);
             // 
             // num5
             // 
@@ -118,6 +124,7 @@ namespace Programming2Class1Task7
             this.num5.TabIndex = 6;
             this.num5.Text = "5";
             this.num5.UseVisualStyleBackColor = true;
+            this.num5.Click += new System.EventHandler(this.num5_Click);
             // 
             // num4
             // 
@@ -128,6 +135,7 @@ namespace Programming2Class1Task7
             this.num4.TabIndex = 5;
             this.num4.Text = "4";
             this.num4.UseVisualStyleBackColor = true;
+            this.num4.Click += new System.EventHandler(this.num4_Click);
             // 
             // num9
             // 
@@ -138,6 +146,7 @@ namespace Programming2Class1Task7
             this.num9.TabIndex = 10;
             this.num9.Text = "9";
             this.num9.UseVisualStyleBackColor = true;
+            this.num9.Click += new System.EventHandler(this.num9_Click);
             // 
             // num8
             // 
@@ -148,6 +157,7 @@ namespace Programming2Class1Task7
             this.num8.TabIndex = 9;
             this.num8.Text = "8";
             this.num8.UseVisualStyleBackColor = true;
+            this.num8.Click += new System.EventHandler(this.num8_Click);
             // 
             // num7
             // 
@@ -158,6 +168,7 @@ namespace Programming2Class1Task7
             this.num7.TabIndex = 8;
             this.num7.Text = "7";
             this.num7.UseVisualStyleBackColor = true;
+            this.num7.Click += new System.EventHandler(this.num7_Click);
             // 
             // dot
             // 
@@ -169,6 +180,7 @@ namespace Programming2Class1Task7
             this.dot.Text = ".";
             this.dot.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.dot.UseVisualStyleBackColor = true;
+            this.dot.Click += new System.EventHandler(this.dot_Click);
             // 
             // enter
             // 
@@ -180,6 +192,7 @@ namespace Programming2Class1Task7
             this.enter.Text = "Enter";
             this.enter.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.enter.UseVisualStyleBackColor = true;
+            this.enter.Click += new System.EventHandler(this.enter_Click);
             // 
             // button1
             // 
@@ -191,6 +204,7 @@ namespace Programming2Class1Task7
             this.button1.Text = "+";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // mul
             // 
@@ -202,6 +216,7 @@ namespace Programming2Class1Task7
             this.mul.Text = "*";
             this.mul.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.mul.UseVisualStyleBackColor = true;
+            this.mul.Click += new System.EventHandler(this.mul_Click);
             // 
             // button3
             // 
@@ -213,6 +228,7 @@ namespace Programming2Class1Task7
             this.button3.Text = "÷";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -224,6 +240,7 @@ namespace Programming2Class1Task7
             this.button4.Text = "mod";
             this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // minus
             // 
@@ -235,6 +252,7 @@ namespace Programming2Class1Task7
             this.minus.Text = "-";
             this.minus.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
             // Calculator
             // 
