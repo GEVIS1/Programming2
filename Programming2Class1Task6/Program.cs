@@ -9,7 +9,9 @@
  *    Description:		    The program creates a form with five text boxes that the user must fill with numbers. Then upon pressing the \
  *                          Sum or the Average button the result will be calculated and displayed in the adjacent text box.
  *    Known Bugs:		    
- *    Additional Features:  Check if user forgot to input any numbers or input non-numbers and default to 0.
+ *    Additional Features:  Check if user forgot to input any numbers or input non-numbers and default to 0. 
+ *                          Button to clear user input.
+ *                          Button to input random numbers in the input fields.
  */
 
 
