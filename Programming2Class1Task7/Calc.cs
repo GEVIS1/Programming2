@@ -16,14 +16,15 @@ namespace Programming2Class1Task7
         decimal previous;
 
         /* 
-         * Use: 
-         * Function: 
-         * Parameters: 
-         * Return: 
+         * Use:         Method to add two numbers together.
+         * Function:    Takes the previous input and the current input in the display \
+         *              and adds them together, then puts the result in the display.
+         * Parameters:  addend1, addend2.
+         * Return:      The sum of the two addends.
          */
-        public decimal Add(decimal input1, decimal input2)
+        public decimal Add(decimal addend1, decimal addend2)
         {
-            decimal result = input1 + input2;
+            decimal result = addend1 + addend2;
             return result;
         }
 
@@ -82,6 +83,11 @@ namespace Programming2Class1Task7
             decimal result = 0;
 
             return result;
+        }
+
+        public void StorePrevious()
+        {
+            previous = 
         }
 
     }

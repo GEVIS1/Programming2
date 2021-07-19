@@ -189,8 +189,7 @@ namespace Programming2Class1Task7
             this.enter.Name = "enter";
             this.enter.Size = new System.Drawing.Size(50, 106);
             this.enter.TabIndex = 12;
-            this.enter.Text = "Enter";
-            this.enter.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.enter.Text = "=";
             this.enter.UseVisualStyleBackColor = true;
             this.enter.Click += new System.EventHandler(this.enter_Click);
             // 
@@ -202,7 +201,6 @@ namespace Programming2Class1Task7
             this.button1.Size = new System.Drawing.Size(50, 106);
             this.button1.TabIndex = 13;
             this.button1.Text = "+";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -288,7 +286,6 @@ namespace Programming2Class1Task7
         #endregion
 
         private System.Windows.Forms.Button num1;
-        private System.Windows.Forms.TextBox output;
         private System.Windows.Forms.Button num2;
         private System.Windows.Forms.Button num0;
         private System.Windows.Forms.Button num3;
@@ -305,6 +302,7 @@ namespace Programming2Class1Task7
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button minus;
+        public System.Windows.Forms.TextBox output;
     }
 }
 
