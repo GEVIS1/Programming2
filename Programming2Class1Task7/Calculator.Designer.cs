@@ -43,10 +43,10 @@ namespace Programming2Class1Task7
             this.num7 = new System.Windows.Forms.Button();
             this.dot = new System.Windows.Forms.Button();
             this.enter = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
             this.mul = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.div = new System.Windows.Forms.Button();
+            this.mod = new System.Windows.Forms.Button();
             this.minus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -194,16 +194,16 @@ namespace Programming2Class1Task7
             this.enter.UseVisualStyleBackColor = true;
             this.enter.Click += new System.EventHandler(this.enter_Click);
             // 
-            // button1
+            // add
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(180, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 106);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.Location = new System.Drawing.Point(180, 133);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(50, 106);
+            this.add.TabIndex = 13;
+            this.add.Text = "+";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // mul
             // 
@@ -217,29 +217,29 @@ namespace Programming2Class1Task7
             this.mul.UseVisualStyleBackColor = true;
             this.mul.Click += new System.EventHandler(this.mul_Click);
             // 
-            // button3
+            // div
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(68, 77);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 50);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "÷";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.div.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.div.Location = new System.Drawing.Point(68, 77);
+            this.div.Name = "div";
+            this.div.Size = new System.Drawing.Size(50, 50);
+            this.div.TabIndex = 15;
+            this.div.Text = "÷";
+            this.div.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.div.UseVisualStyleBackColor = true;
+            this.div.Click += new System.EventHandler(this.div_Click);
             // 
-            // button4
+            // mod
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 77);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 50);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "mod";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.mod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mod.Location = new System.Drawing.Point(12, 77);
+            this.mod.Name = "mod";
+            this.mod.Size = new System.Drawing.Size(50, 50);
+            this.mod.TabIndex = 14;
+            this.mod.Text = "mod";
+            this.mod.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.mod.UseVisualStyleBackColor = true;
+            this.mod.Click += new System.EventHandler(this.mod_Click);
             // 
             // minus
             // 
@@ -260,9 +260,9 @@ namespace Programming2Class1Task7
             this.ClientSize = new System.Drawing.Size(241, 362);
             this.Controls.Add(this.minus);
             this.Controls.Add(this.mul);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.div);
+            this.Controls.Add(this.mod);
+            this.Controls.Add(this.add);
             this.Controls.Add(this.enter);
             this.Controls.Add(this.dot);
             this.Controls.Add(this.num9);
@@ -298,10 +298,10 @@ namespace Programming2Class1Task7
         private System.Windows.Forms.Button num7;
         private System.Windows.Forms.Button dot;
         private System.Windows.Forms.Button enter;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button mul;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button div;
+        private System.Windows.Forms.Button mod;
         private System.Windows.Forms.Button minus;
         public System.Windows.Forms.TextBox display;
     }

@@ -15,11 +15,14 @@ namespace Programming2Class1Task7
     {
         // Always store previous input.
         decimal previous;
+        int selectedOperator;
         TextBox display;
         
-        public Calculations(TextBox calcDisplay)
+        // Constructor grabbing calculator display textbox
+        public Calculations(TextBox calcDisplay, int selectedOperator)
         {
             display = calcDisplay;
+            this.selectedOperator = selectedOperator;
         }
 
         /* 

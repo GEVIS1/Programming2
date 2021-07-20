@@ -13,10 +13,21 @@ namespace Programming2Class1Task7
     public partial class Calculator : Form
     {
         private Calculations calcInstance;
-        public Calculator()
+
+        /* Operators are numbered as follows:
+         * Add: 0
+         * Sub: 1
+         * Mul: 2
+         * Div: 3
+         * Mod: 4
+         */
+        
+        private int selectedOperator;
+        public Calculator(int selectedOperator)
         {
             InitializeComponent();
-            calcInstance = new Calculations(display);
+            calcInstance = new Calculations(display, selectedOperator);
+            this.selectedOperator = selectedOperator;
         }
 
         private void num0_Click(object sender, EventArgs e)
@@ -86,10 +97,40 @@ namespace Programming2Class1Task7
 
         private void enter_Click(object sender, EventArgs e)
         {
+            switch (selectedOperator)
+            {
+                // Add
+                case 0:
+                    calcInstance.Add(calcInstance.);
+                    break;
 
+                // Sub
+                case 1:
+                    calcInstance.Sub();
+                    break;
+
+                // Mul
+                case 2:
+                    calcInstance.Mul();
+                    break;
+
+                // Div
+                case 3:
+                    calcInstance.Div();
+                    break;
+
+                // Mod
+                case 4:
+                    calcInstance.Mod();
+                    break;
+                
+                default:
+                    display.Text = "Error";
+                    break;
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void add_Click(object sender, EventArgs e)
         {
 
         }
@@ -104,12 +145,12 @@ namespace Programming2Class1Task7
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void div_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void mod_Click(object sender, EventArgs e)
         {
 
         }
