@@ -12,16 +12,16 @@ namespace Programming2Class1Task7
 {
     public partial class Calculator : Form
     {
-        private Calc calcInstance;
+        private Calculations calcInstance;
         public Calculator()
         {
             InitializeComponent();
-            calcInstance = new Calc(display);
+            calcInstance = new Calculations(display);
         }
 
         private void num0_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void num1_Click(object sender, EventArgs e)

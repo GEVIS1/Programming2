@@ -11,13 +11,13 @@ using System.Threading.Tasks;
 namespace Programming2Class1Task7
 {
     // Class containing the calculator functionality
-    class Calc
+    class Calculations
     {
         // Always store previous input.
         decimal previous;
         TextBox display;
         
-        public Calc(TextBox calcDisplay)
+        public Calculations(TextBox calcDisplay)
         {
             display = calcDisplay;
         }
