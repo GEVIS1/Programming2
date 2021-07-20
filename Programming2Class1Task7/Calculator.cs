@@ -21,52 +21,62 @@ namespace Programming2Class1Task7
 
         private void num0_Click(object sender, EventArgs e)
         {
-            
+            calcInstance.StorePrevious();
+            display.Text = 0.ToString();
         }
 
         private void num1_Click(object sender, EventArgs e)
         {
-
+            calcInstance.StorePrevious();
+            display.Text = 1.ToString();
         }
 
         private void num2_Click(object sender, EventArgs e)
         {
-
+            calcInstance.StorePrevious();
+            display.Text = 2.ToString();
         }
 
         private void num3_Click(object sender, EventArgs e)
         {
-
+            calcInstance.StorePrevious();
+            display.Text = 3.ToString();
         }
 
         private void num4_Click(object sender, EventArgs e)
         {
-
+            calcInstance.StorePrevious();
+            display.Text = 4.ToString();
         }
 
         private void num5_Click(object sender, EventArgs e)
         {
-
+            calcInstance.StorePrevious();
+            display.Text = 5.ToString();
         }
 
         private void num6_Click(object sender, EventArgs e)
         {
-
+            calcInstance.StorePrevious();
+            display.Text = 6.ToString();
         }
 
         private void num7_Click(object sender, EventArgs e)
         {
-
+            calcInstance.StorePrevious();
+            display.Text = 7.ToString();
         }
 
         private void num8_Click(object sender, EventArgs e)
         {
-
+            calcInstance.StorePrevious();
+            display.Text = 8.ToString();
         }
 
         private void num9_Click(object sender, EventArgs e)
         {
-
+            calcInstance.StorePrevious();
+            display.Text = 9.ToString();
         }
 
         private void dot_Click(object sender, EventArgs e)

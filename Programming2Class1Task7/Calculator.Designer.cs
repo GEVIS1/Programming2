@@ -66,6 +66,7 @@ namespace Programming2Class1Task7
             this.display.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.display.Location = new System.Drawing.Point(12, 12);
             this.display.Name = "display";
+            this.display.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.display.Size = new System.Drawing.Size(218, 38);
             this.display.TabIndex = 1;
             this.display.TextChanged += new System.EventHandler(this.output_TextChanged);
