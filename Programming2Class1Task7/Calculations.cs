@@ -95,7 +95,10 @@ namespace Programming2Class1Task7
         // Store previous value in the display for use later
         public void StorePrevious()
         {
-            previous = Convert.ToDecimal(display.Text);
+            if (display.Text != "")
+            {
+                previous = Convert.ToDecimal(display.Text);
+            }
         }
 
     }
