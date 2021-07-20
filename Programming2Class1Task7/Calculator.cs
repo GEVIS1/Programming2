@@ -13,6 +13,7 @@ namespace Programming2Class1Task7
     public partial class Calculator : Form
     {
         private Calculations calcInstance;
+        decimal previous;
 
         /* Operators are numbered as follows:
          * Add: 0
@@ -21,12 +22,12 @@ namespace Programming2Class1Task7
          * Div: 3
          * Mod: 4
          */
-        
+
         private int selectedOperator;
         public Calculator(int selectedOperator)
         {
             InitializeComponent();
-            calcInstance = new Calculations(display, selectedOperator);
+            calcInstance = new Calculations(display, selectedOperator, previous);
             this.selectedOperator = selectedOperator;
         }
 
@@ -101,28 +102,28 @@ namespace Programming2Class1Task7
             {
                 // Add
                 case 0:
-                    calcInstance.Add(calcInstance.);
+                    calcInstance.Add(previous, Convert.ToDecimal(display.Text));
                     break;
 
-                // Sub
-                case 1:
-                    calcInstance.Sub();
-                    break;
+                //// Sub
+                //case 1:
+                //    calcInstance.Sub();
+                //    break;
 
-                // Mul
-                case 2:
-                    calcInstance.Mul();
-                    break;
+                //// Mul
+                //case 2:
+                //    calcInstance.Mul();
+                //    break;
 
-                // Div
-                case 3:
-                    calcInstance.Div();
-                    break;
+                //// Div
+                //case 3:
+                //    calcInstance.Div();
+                //    break;
 
-                // Mod
-                case 4:
-                    calcInstance.Mod();
-                    break;
+                //// Mod
+                //case 4:
+                //    calcInstance.Mod();
+                //    break;
                 
                 default:
                     display.Text = "Error";

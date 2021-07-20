@@ -17,12 +17,14 @@ namespace Programming2Class1Task7
         decimal previous;
         int selectedOperator;
         TextBox display;
-        
+
         // Constructor grabbing calculator display textbox
-        public Calculations(TextBox calcDisplay, int selectedOperator)
+        public Calculations(TextBox calcDisplay, int selectedOperator, decimal previous)
         {
             display = calcDisplay;
             this.selectedOperator = selectedOperator;
+            this.previous = previous;
+            
         }
 
         /* 
@@ -96,12 +98,14 @@ namespace Programming2Class1Task7
         }
 
         // Store previous value in the display for use later
-        public void StorePrevious()
+        public decimal StorePrevious()
         {
             if (display.Text != "")
             {
-                previous = Convert.ToDecimal(display.Text);
+                return previous = Convert.ToDecimal(display.Text);
             }
+
+            
         }
 
     }
