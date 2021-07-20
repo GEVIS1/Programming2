@@ -31,7 +31,7 @@ namespace Programming2Class1Task7
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.num1 = new System.Windows.Forms.Button();
-            this.output = new System.Windows.Forms.TextBox();
+            this.display = new System.Windows.Forms.TextBox();
             this.num2 = new System.Windows.Forms.Button();
             this.num0 = new System.Windows.Forms.Button();
             this.num3 = new System.Windows.Forms.Button();
@@ -61,14 +61,14 @@ namespace Programming2Class1Task7
             this.num1.UseVisualStyleBackColor = true;
             this.num1.Click += new System.EventHandler(this.num1_Click);
             // 
-            // output
+            // display
             // 
-            this.output.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.output.Location = new System.Drawing.Point(12, 12);
-            this.output.Name = "output";
-            this.output.Size = new System.Drawing.Size(218, 38);
-            this.output.TabIndex = 1;
-            this.output.TextChanged += new System.EventHandler(this.output_TextChanged);
+            this.display.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.display.Location = new System.Drawing.Point(12, 12);
+            this.display.Name = "display";
+            this.display.Size = new System.Drawing.Size(218, 38);
+            this.display.TabIndex = 1;
+            this.display.TextChanged += new System.EventHandler(this.output_TextChanged);
             // 
             // num2
             // 
@@ -273,7 +273,7 @@ namespace Programming2Class1Task7
             this.Controls.Add(this.num3);
             this.Controls.Add(this.num0);
             this.Controls.Add(this.num2);
-            this.Controls.Add(this.output);
+            this.Controls.Add(this.display);
             this.Controls.Add(this.num1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calculator";
@@ -302,7 +302,7 @@ namespace Programming2Class1Task7
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button minus;
-        public System.Windows.Forms.TextBox output;
+        public System.Windows.Forms.TextBox display;
     }
 }
 

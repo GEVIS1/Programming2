@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,12 @@ namespace Programming2Class1Task7
     {
         // Always store previous input.
         decimal previous;
+        TextBox display;
+        
+        public Calc(TextBox calcDisplay)
+        {
+            display = calcDisplay;
+        }
 
         /* 
          * Use:         Method to add two numbers together.
@@ -85,9 +92,10 @@ namespace Programming2Class1Task7
             return result;
         }
 
+        // Store previous value in the display for use later
         public void StorePrevious()
         {
-            previous = 
+            previous = Convert.ToDecimal(display.Text);
         }
 
     }
