@@ -110,10 +110,10 @@ namespace Programming2Class1Task7
                     display.Text = calcInstance.Sub(previous, Convert.ToDecimal(display.Text)).ToString();
                     break;
 
-                //// Mul
-                //case 2:
-                //    calcInstance.Mul();
-                //    break;
+                // Mul
+                case 2:
+                    display.Text = calcInstance.Mul(previous, Convert.ToDecimal(display.Text)).ToString();
+                    break;
 
                 //// Div
                 //case 3:
