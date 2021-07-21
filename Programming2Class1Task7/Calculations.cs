@@ -5,8 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//@TODO Write comments.
-// Finish methods
 
 namespace Programming2Class1Task7
 {
@@ -98,10 +96,10 @@ namespace Programming2Class1Task7
         }
 
         /* 
-         * Use:         Method to do modulus arithmetic.
-         * Function:    Takes the previous input and mods it into the current input.
-         * Parameters:  n, mod.
-         * Return:      decimal n to the mod provided.
+         * Use:         Method to return current error state of the previous division.
+         * Function:    Takes error bool and returns it when called.
+         * Parameters:  
+         * Return:      The value of the error bool.
          */
         public bool CheckDivByZero()
         {
