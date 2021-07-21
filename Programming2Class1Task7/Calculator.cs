@@ -33,14 +33,12 @@ namespace Programming2Class1Task7
 
         private void num0_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 0.ToString();
+            display.Text += "0";
         }
 
         private void num1_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 1.ToString();
+            display.Text += "1";
         }
 
         private void num2_Click(object sender, EventArgs e)
@@ -141,6 +139,7 @@ namespace Programming2Class1Task7
         {
             previous = calcInstance.StorePrevious();
             selectedOperator = 0;
+            display.Text = "";
         }
 
         private void minus_Click(object sender, EventArgs e)
