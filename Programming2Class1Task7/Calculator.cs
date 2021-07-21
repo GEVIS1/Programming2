@@ -105,10 +105,10 @@ namespace Programming2Class1Task7
                     display.Text = calcInstance.Add(previous, Convert.ToDecimal(display.Text)).ToString();
                     break;
 
-                //// Sub
-                //case 1:
-                //    calcInstance.Sub();
-                //    break;
+                // Sub
+                case 1:
+                    display.Text = calcInstance.Sub(previous, Convert.ToDecimal(display.Text)).ToString();
+                    break;
 
                 //// Mul
                 //case 2:
@@ -124,7 +124,7 @@ namespace Programming2Class1Task7
                 //case 4:
                 //    calcInstance.Mod();
                 //    break;
-                
+
                 default:
                     display.Text = "Error";
                     break;
