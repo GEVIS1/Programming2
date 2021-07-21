@@ -17,13 +17,15 @@ namespace Programming2Class1Task7
         decimal previous;
         int selectedOperator;
         TextBox display;
+        bool error;
 
         // Constructor grabbing calculator display textbox
-        public Calculations(TextBox calcDisplay, int selectedOperator, decimal previous)
+        public Calculations(TextBox calcDisplay, int selectedOperator, decimal previous, bool error)
         {
             display = calcDisplay;
             this.selectedOperator = selectedOperator;
             this.previous = previous;
+            this.error = error;
             
         }
 
@@ -41,10 +43,11 @@ namespace Programming2Class1Task7
         }
 
         /* 
-         * Use: 
-         * Function: 
-         * Parameters: 
-         * Return: 
+         * Use:         Method to subtract a number from another.
+         * Function:    Takes the previous input and the current input in the display \ 
+         *              and subtracts the current input from the previous.
+         * Parameters:  minuend, subtrahend.
+         * Return:      The result of the subtraction.
          */
         public decimal Sub(decimal minuend, decimal subtrahend)
         {
@@ -53,10 +56,12 @@ namespace Programming2Class1Task7
         }
 
         /* 
-         * Use: 
-         * Function: 
-         * Parameters: 
-         * Return: 
+         * Use:         Method to multiply the previous input times the current input.
+         * Function:    Takes the previous input and multiplies it by the current input \
+         *              in the display. If the previous or the current input is zero it \
+         *              always returns zero.
+         * Parameters:  Multiplicand, multiplier.
+         * Return:      The result of the multiplication.
          */
         public decimal Mul(decimal multiplicand, decimal multiplier)
         {
@@ -65,21 +70,28 @@ namespace Programming2Class1Task7
                 return 0;
             }
 
-            decimal result = 0;
+            decimal result = multiplicand * multiplier;
 
             return result;
         }
 
         /* 
-         * Use: 
-         * Function: 
-         * Parameters: 
-         * Return: 
+         * Use:         Method to divide the previous input by the current input.
+         * Function:    Takes the previous input and divides it by the current input \
+         *              in the display. If the divisor is zero it displays an error.
+         * Parameters:  Dividend, divisor.
+         * Return:      The result of the division.
          */
         public decimal Div(decimal dividend, decimal divisor)
         {
-
             decimal result = 0;
+            if (divisor == 0)
+            {
+                error = true;
+                return result;
+            }
+
+            result = dividend / divisor;
 
             return result;
         }

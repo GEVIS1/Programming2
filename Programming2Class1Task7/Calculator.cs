@@ -14,7 +14,7 @@ namespace Programming2Class1Task7
     {
         private Calculations calcInstance;
         decimal previous;
-        decimal result;
+        bool error;
 
         /* Operators are numbered as follows:
          * Add: 0
@@ -28,7 +28,7 @@ namespace Programming2Class1Task7
         public Calculator()
         {
             InitializeComponent();
-            calcInstance = new Calculations(display, selectedOperator, previous);
+            calcInstance = new Calculations(display, selectedOperator, previous, error);
         }
 
         private void num0_Click(object sender, EventArgs e)
@@ -115,10 +115,10 @@ namespace Programming2Class1Task7
                     display.Text = calcInstance.Mul(previous, Convert.ToDecimal(display.Text)).ToString();
                     break;
 
-                //// Div
-                //case 3:
-                //    calcInstance.Div();
-                //    break;
+                // Div
+                case 3:
+                    display.Text = calcInstance.Div(previous, Convert.ToDecimal(display.Text)).ToString();
+                    break;
 
                 //// Mod
                 //case 4:
