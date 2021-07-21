@@ -98,11 +98,10 @@ namespace Programming2Class1Task7
         }
 
         /* 
-         * Use:         Method to divide the previous input by the current input.
-         * Function:    Takes the previous input and divides it by the current input \
-         *              in the display. If the divisor is zero it displays an error.
-         * Parameters:  Dividend, divisor.
-         * Return:      The result of the division.
+         * Use:         Method to do modulus arithmetic.
+         * Function:    Takes the previous input and mods it into the current input.
+         * Parameters:  n, mod.
+         * Return:      decimal n to the mod provided.
          */
         public bool CheckDivByZero()
         {
