@@ -43,50 +43,42 @@ namespace Programming2Class1Task7
 
         private void num2_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 2.ToString();
+            display.Text += "2";
         }
 
         private void num3_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 3.ToString();
+            display.Text += "3";
         }
 
         private void num4_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 4.ToString();
+            display.Text += "4";
         }
 
         private void num5_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 5.ToString();
+            display.Text += "5";
         }
 
         private void num6_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 6.ToString();
+            display.Text += "6";
         }
 
         private void num7_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 7.ToString();
+            display.Text += "7";
         }
 
         private void num8_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 8.ToString();
+            display.Text += "8";
         }
 
         private void num9_Click(object sender, EventArgs e)
         {
-            previous = calcInstance.StorePrevious();
-            display.Text = 9.ToString();
+            display.Text += "9";
         }
 
         private void dot_Click(object sender, EventArgs e)
@@ -146,24 +138,28 @@ namespace Programming2Class1Task7
         {
             previous = calcInstance.StorePrevious();
             selectedOperator = 1;
+            display.Text = "";
         }
 
         private void mul_Click(object sender, EventArgs e)
         {
             previous = calcInstance.StorePrevious();
             selectedOperator = 2;
+            display.Text = "";
         }
 
         private void div_Click(object sender, EventArgs e)
         {
             previous = calcInstance.StorePrevious();
             selectedOperator = 3;
+            display.Text = "";
         }
 
         private void mod_Click(object sender, EventArgs e)
         {
             previous = calcInstance.StorePrevious();
             selectedOperator = 4;
+            display.Text = "";
         }
 
         private void output_TextChanged(object sender, EventArgs e)
