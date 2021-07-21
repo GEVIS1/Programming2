@@ -105,7 +105,7 @@ namespace Programming2Class1Task7
                 return previous = Convert.ToDecimal(display.Text);
             }
 
-            
+            return 0;
         }
 
     }

@@ -14,6 +14,7 @@ namespace Programming2Class1Task7
     {
         private Calculations calcInstance;
         decimal previous;
+        decimal result;
 
         /* Operators are numbered as follows:
          * Add: 0
@@ -24,70 +25,69 @@ namespace Programming2Class1Task7
          */
 
         private int selectedOperator;
-        public Calculator(int selectedOperator)
+        public Calculator()
         {
             InitializeComponent();
             calcInstance = new Calculations(display, selectedOperator, previous);
-            this.selectedOperator = selectedOperator;
         }
 
         private void num0_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 0.ToString();
         }
 
         private void num1_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 1.ToString();
         }
 
         private void num2_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 2.ToString();
         }
 
         private void num3_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 3.ToString();
         }
 
         private void num4_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 4.ToString();
         }
 
         private void num5_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 5.ToString();
         }
 
         private void num6_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 6.ToString();
         }
 
         private void num7_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 7.ToString();
         }
 
         private void num8_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 8.ToString();
         }
 
         private void num9_Click(object sender, EventArgs e)
         {
-            calcInstance.StorePrevious();
+            previous = calcInstance.StorePrevious();
             display.Text = 9.ToString();
         }
 
@@ -102,7 +102,7 @@ namespace Programming2Class1Task7
             {
                 // Add
                 case 0:
-                    calcInstance.Add(previous, Convert.ToDecimal(display.Text));
+                    display.Text = calcInstance.Add(previous, Convert.ToDecimal(display.Text)).ToString();
                     break;
 
                 //// Sub
@@ -133,27 +133,32 @@ namespace Programming2Class1Task7
 
         private void add_Click(object sender, EventArgs e)
         {
-
+            previous = calcInstance.StorePrevious();
+            selectedOperator = 0;
         }
 
         private void minus_Click(object sender, EventArgs e)
         {
-
+            previous = calcInstance.StorePrevious();
+            selectedOperator = 1;
         }
 
         private void mul_Click(object sender, EventArgs e)
         {
-
+            previous = calcInstance.StorePrevious();
+            selectedOperator = 2;
         }
 
         private void div_Click(object sender, EventArgs e)
         {
-
+            previous = calcInstance.StorePrevious();
+            selectedOperator = 3;
         }
 
         private void mod_Click(object sender, EventArgs e)
         {
-
+            previous = calcInstance.StorePrevious();
+            selectedOperator = 4;
         }
 
         private void output_TextChanged(object sender, EventArgs e)
