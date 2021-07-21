@@ -98,6 +98,8 @@ namespace Programming2Class1Task7
 
         private void enter_Click(object sender, EventArgs e)
         {
+            calcInstance.ClearError();
+
             switch (selectedOperator)
             {
                 // Add
@@ -118,6 +120,10 @@ namespace Programming2Class1Task7
                 // Div
                 case 3:
                     display.Text = calcInstance.Div(previous, Convert.ToDecimal(display.Text)).ToString();
+                    if (calcInstance.CheckDivByZero())
+                    {
+                        display.Text = "Error: Div by zero";
+                    }
                     break;
 
                 // Mod

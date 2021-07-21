@@ -84,6 +84,7 @@ namespace Programming2Class1Task7
          */
         public decimal Div(decimal dividend, decimal divisor)
         {
+            error = false;
             decimal result = 0;
             if (divisor == 0)
             {
@@ -95,6 +96,20 @@ namespace Programming2Class1Task7
 
             return result;
         }
+
+        /* 
+         * Use:         Method to divide the previous input by the current input.
+         * Function:    Takes the previous input and divides it by the current input \
+         *              in the display. If the divisor is zero it displays an error.
+         * Parameters:  Dividend, divisor.
+         * Return:      The result of the division.
+         */
+        public bool CheckDivByZero()
+        {
+            return error;
+        }
+
+
 
         /* 
          * Use:         Method to do modulus arithmetic.
@@ -111,6 +126,7 @@ namespace Programming2Class1Task7
         // Store previous value in the display for use later
         public decimal StorePrevious()
         {
+            ClearError();
             if (display.Text != "")
             {
                 return previous = Convert.ToDecimal(display.Text);
@@ -118,6 +134,14 @@ namespace Programming2Class1Task7
 
             return 0;
         }
+        public void ClearError() { 
 
+        // Clear error messages to prevent converting text to decimal
+        bool isNumeric = decimal.TryParse(display.Text, out _);
+            if (!isNumeric)
+            {
+                display.Text = 0.ToString();
+            }
+        }
     }
 }
