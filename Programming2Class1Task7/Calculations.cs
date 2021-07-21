@@ -97,15 +97,14 @@ namespace Programming2Class1Task7
         }
 
         /* 
-         * Use: 
-         * Function: 
-         * Parameters: 
-         * Return: 
+         * Use:         Method to do modulus arithmetic.
+         * Function:    Takes the previous input and mods it into the current input.
+         * Parameters:  n, mod.
+         * Return:      decimal n to the mod provided.
          */
-        public decimal Mod(decimal n, int mod)
+        public decimal Mod(decimal n, decimal mod)
         {
-            decimal result = 0;
-
+            decimal result = n % mod;
             return result;
         }
 

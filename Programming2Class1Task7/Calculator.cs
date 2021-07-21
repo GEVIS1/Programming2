@@ -120,10 +120,10 @@ namespace Programming2Class1Task7
                     display.Text = calcInstance.Div(previous, Convert.ToDecimal(display.Text)).ToString();
                     break;
 
-                //// Mod
-                //case 4:
-                //    calcInstance.Mod();
-                //    break;
+                // Mod
+                case 4:
+                    display.Text = calcInstance.Mod(previous, Convert.ToDecimal(display.Text)).ToString();
+                    break;
 
                 default:
                     display.Text = "Error";
