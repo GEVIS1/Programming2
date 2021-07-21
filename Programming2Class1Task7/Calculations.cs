@@ -68,7 +68,15 @@ namespace Programming2Class1Task7
                 return 0;
             }
 
+            //try
+            //{
             decimal result = multiplicand * multiplier;
+            //}
+            //catch (System.OverflowException e)
+            //{
+            //    display.Text = "Overflow.";
+            //}
+          
 
             return result;
         }

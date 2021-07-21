@@ -7,8 +7,8 @@
  * Platform:		    Microsoft Visual Studio 2019
  * Purpose:		        A simple calculator program.
  * Description:		    A .NET framework Windows Form program with basic calculator functionality (add, mul, sub, div, mod).
- * Known Bugs:		    
- * Additional Features: 
+ * Known Bugs:		    No overflow protection on the decimal result.
+ * Additional Features: Checks for divison by zero.
  */
 
 using System;
